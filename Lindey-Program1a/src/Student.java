@@ -3,46 +3,37 @@ import java.util.Comparator;
 
 class Student implements Comparator<Student>, Comparable<Student> {
 	
-	private String m_lastName;
-	private String m_firstName;
-	private int m_age;
-	private float m_gpa;
+	public String lastName;		
+	public String firstName;
+	public int age;
+	public float gpa;
 	
-	public void setData(String lastName, String firstName, int age, float gpa)
+	public void setData(String _lN, String _fN, int _age, float _gpa)
 	{
-		m_lastName = lastName;
-		m_firstName = firstName;
-		m_age = age;
-		m_gpa = gpa;
+		lastName = _lN;
+		firstName = _fN;
+		age = _age;
+		gpa = _gpa;
 	}
-	
-	public String getLastName(){ return m_lastName; }
-	public String getFirstName() { return m_firstName; }
-	public int getAge() { return m_age; }
-	public float getGpa() { return m_gpa; }
 	
 	public int compare(Student a, Student b)
 	{
-		if(!(a.getLastName()).equals(b.getLastName()))
+		// If the Student's last names don't match
+		if(!(a.lastName).equals(b.lastName))
 		{
-			return (a.getLastName()).compareTo(b.getLastName());
+			// Compare their last names
+			return (a.lastName).compareTo(b.lastName);
 		}
 		else
 		{
-			return (a.getFirstName()).compareTo(b.getFirstName());
+			// Compare their first names
+			return (a.firstName).compareTo(b.firstName);
 		}
 	}
 	
 	public int compareTo(Student b)
 	{
-		if(!(getLastName()).equals(b.getLastName()))
-		{
-			return (getLastName()).compareTo(b.getLastName());
-		}
-		else
-		{
-			return (getFirstName()).compareTo(b.getFirstName());
-		}
+		return compare(this, b);
 	}
 
 }

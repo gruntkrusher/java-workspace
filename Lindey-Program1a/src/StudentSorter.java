@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -35,33 +34,35 @@ public class StudentSorter {
 			
 			while(src.hasNextLine())
 			{
+				// Parse text from file
 				lastName = src.next();
 				firstName = src.next();
 				numAge = src.nextInt();
 				numGpa = src.nextFloat();
 				
+				// Store data inside of student object
 				tempStdt = new Student();
 				tempStdt.setData(lastName, firstName, numAge, numGpa);
 				
+				// Add student object to students list
 				students.add(tempStdt);
 			}
+			
+			// Sort students list
+			Collections.sort(students);
+			
+			// Print sorted students list
+			for( Student s : students )
+			{
+				System.out.println(s.age + " " + s.gpa + " " + s.firstName + " " + s.lastName);
+			}
+			
 		}
 		catch(FileNotFoundException e)
 		{
 			System.out.print("main: Oops, FileNotFoundException caught");
 		}
-		catch(IOException e)
-		{
-			System.out.print("main: Oops, IOException caught");
-		}
 		
-		Collections.sort(students);
-		
-		for( Student s : students )
-		{
-			System.out.println(s.getAge() + " " + s.getGpa() + " " + s.getFirstName() + " " + s.getLastName());
-		} 
-
 	}
 
 }
