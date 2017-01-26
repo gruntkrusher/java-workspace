@@ -1,0 +1,10 @@
+Lannister,Cersei,36,3.456
+Stark,Sansa,16,2.540
+Lannister,Jaime,35,3.123
+Targaryen,Daenerys,16,3.333
+Mormont,Jorah,50,2.345
+Stark,Eddard,52,3.678
+Stark,Catelyn,45,2.999
+Snow,Jon,18,3.765
+Stark,Rob,17,2.750
+Stark,Arya,13,3.666
