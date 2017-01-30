@@ -1,16 +1,18 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
-
 /*
  * StudentSorter.java
  * Author: Jacob Lindey
  * Project: Lindey-Program1a
  * Start Date: 1/25/2017
  */
+
+// Default Imports
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+////////////////////////////////////////////////////////////////
 
 public class StudentSorter {
 	
@@ -28,8 +30,8 @@ public class StudentSorter {
 		
 		students = new ArrayList<Student>();	
 				
-		try
-		{
+		try {
+			
 			src = new Scanner(new File ("data.txt")).useDelimiter(",|\r\n|\n");
 			
 			while(src.hasNextLine())
@@ -57,13 +59,9 @@ public class StudentSorter {
 				System.out.println(s.age + " " + s.gpa + " " + s.firstName + " " + s.lastName);
 			}
 			
-		}
-		catch(FileNotFoundException e)
-		{
+		} catch(FileNotFoundException e) {
 			System.out.print("main: Oops, FileNotFoundException caught");
 		}
-		
 	}
-
 }
 

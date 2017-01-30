@@ -1,12 +1,20 @@
-import java.util.Comparator;
+/*
+ * Student.java
+ * Author: Jacob Lindey
+ * Project: Lindey-Program1a
+ * Start Date: 1/25/17 
+ */
 
+// Default imports
+import java.util.Comparator;
+///////////////////////////////////////////////////////////////
 
 class Student implements Comparator<Student>, Comparable<Student> {
 	
-	public String lastName;		
-	public String firstName;
-	public int age;
-	public float gpa;
+	public String lastName;		// Student Last Name
+	public String firstName;	// Student First Name
+	public int age;				// Student Age
+	public float gpa;			// Student Grade Point Average
 	
 	public void setData(String _lN, String _fN, int _age, float _gpa)
 	{
