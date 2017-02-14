@@ -1,0 +1,88 @@
+----BEST----
+
+100  bubble: 1996 selection: 70705 insertion: 2566
+100  bubble: 1.996E-6 selection: 7.0705E-5 insertion: 2.566E-6
+
+100  bubble: 1710 selection: 68139 insertion: 2281
+100  bubble: 1.71E-6 selection: 6.8139E-5 insertion: 2.281E-6
+
+100  bubble: 1710 selection: 83534 insertion: 2566
+100  bubble: 1.71E-6 selection: 8.3534E-5 insertion: 2.566E-6
+
+1000  bubble: 1887358 selection: 2397686 insertion: 70419
+1000  bubble: 0.001887358 selection: 0.002397686 insertion: 7.0419E-5
+
+1000  bubble: 183604 selection: 4441280 insertion: 66713
+1000  bubble: 1.83604E-4 selection: 0.00444128 insertion: 6.6713E-5
+
+1000  bubble: 117176 selection: 219811 insertion: 86955
+1000  bubble: 1.17176E-4 selection: 2.19811E-4 insertion: 8.6955E-5
+
+10000  bubble: 16239264 selection: 21885089 insertion: 2575018
+10000  bubble: 0.016239264 selection: 0.021885089 insertion: 0.002575018
+
+10000  bubble: 17149302 selection: 21501630 insertion: 526294
+10000  bubble: 0.017149302 selection: 0.02150163 insertion: 5.26294E-4
+
+10000  bubble: 15833283 selection: 21755369 insertion: 164217
+10000  bubble: 0.015833283 selection: 0.021755369 insertion: 1.64217E-4
+
+----RAND----
+
+100  bubble: 24518 selection: 5702 insertion: 2566
+100  bubble: 2.4518E-5 selection: 5.702E-6 insertion: 1.18316E-4
+
+100  bubble: 11689 selection: 14826 insertion: 2566
+100  bubble: 1.1689E-5 selection: 1.4826E-5 insertion: 2.9935E-5
+
+100  bubble: 21097 selection: 17677 insertion: 2566
+100  bubble: 2.1097E-5 selection: 1.7677E-5 insertion: 2.1667E-5
+
+1000  bubble: 680532 selection: 284244 insertion: 86955
+1000  bubble: 6.80532E-4 selection: 2.84244E-4 insertion: 6.35487E-4
+
+1000  bubble: 716455 selection: 263147 insertion: 86955
+1000  bubble: 7.16455E-4 selection: 2.63147E-4 insertion: 3.1532E-4
+
+1000  bubble: 729570 selection: 347251 insertion: 86955
+1000  bubble: 7.2957E-4 selection: 3.47251E-4 insertion: 1.39129E-4
+
+10000  bubble: 95286793 selection: 21940683 insertion: 164217
+10000  bubble: 0.095286793 selection: 0.021940683 insertion: 0.013216355
+
+10000  bubble: 96189702 selection: 22100909 insertion: 164217
+10000  bubble: 0.096189702 selection: 0.022100909 insertion: 0.013047577
+
+10000  bubble: 96569171 selection: 22113453 insertion: 164217
+10000  bubble: 0.096569171 selection: 0.022113453 insertion: 0.013271379
+
+----Worst----
+
+100  bubble: 33356 selection: 5702 insertion: 3136
+100  bubble: 3.3356E-5 selection: 5.702E-6 insertion: 3.136E-6
+
+100  bubble: 214965 selection: 5132 insertion: 3136
+100  bubble: 2.14965E-4 selection: 5.132E-6 insertion: 3.136E-6
+
+100  bubble: 51318 selection: 5702 insertion: 3421
+100  bubble: 5.1318E-5 selection: 5.702E-6 insertion: 3.421E-6
+
+1000  bubble: 1818649 selection: 367208 insertion: 282819
+1000  bubble: 0.001818649 selection: 3.67208E-4 insertion: 2.82819E-4
+
+1000  bubble: 452452 selection: 367208 insertion: 289661
+1000  bubble: 4.52452E-4 selection: 3.67208E-4 insertion: 2.89661E-4
+
+1000  bubble: 544255 selection: 461006 insertion: 260866
+1000  bubble: 5.44255E-4 selection: 4.61006E-4 insertion: 2.60866E-4
+
+10000  bubble: 58031422 selection: 36340486 insertion: 26646250
+10000  bubble: 0.058031422 selection: 0.036340486 insertion: 0.02664625
+
+10000  bubble: 57794505 selection: 35973564 insertion: 26618880
+10000  bubble: 0.057794505 selection: 0.035973564 insertion: 0.02661888
+
+10000  bubble: 57670771 selection: 36057953 insertion: 26678180
+10000  bubble: 0.057670771 selection: 0.036057953 insertion: 0.02667818
+
+done
