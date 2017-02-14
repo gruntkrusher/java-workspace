@@ -9,11 +9,11 @@ public class SortTester {
 		m_unsortedData = (int[]) unsorted.clone();
 		
 		opData[0] = bubbleSort();
-
+		System.out.print("bubble, ");
 		opData[1] = selectionSort();
-
+		System.out.print("select, ");
 		opData[2] = insertionSort();
-
+		System.out.println("insert");
 		
 		return opData;
 	}
