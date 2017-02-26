@@ -9,8 +9,11 @@ public class SortTester {
 		m_unsortedData = (int[]) unsorted.clone();
 		
 		opData[0] = bubbleSort();
+		System.out.print("bubble, ");
 		opData[1] = selectionSort();
+		System.out.print("select, ");
 		opData[2] = insertionSort();
+		System.out.println("insert");
 		
 		return opData;
 	}
@@ -32,11 +35,10 @@ public class SortTester {
 	
 	private long bubbleSort() {
 		
-		long n = 0; // Number of operations used ( copy = 1, conditional = 2, swap = 3)
-		
 		// make copy of stored unsorted array
 		int[] unsorted = (int[]) m_unsortedData.clone();
 		
+		long startTime = System.nanoTime();
 		// Sort
 		int i, j;
 		boolean swapped = true;
@@ -45,71 +47,60 @@ public class SortTester {
 				break;
 			swapped = false;
 			for(j = 0; j < i; j++) {
-				n += 2;	// conditional
 				if(unsorted[j] > unsorted[j+1]) {
 					swap(unsorted, j, j+1);
 					swapped = true;
-					n += 3;	// swap
 				}
 			}
 		}
 		
-		// return number of operations
-		return n;
+		// return execution time
+		return System.nanoTime() - startTime;
 	}
 	
 	private long selectionSort() {
 		
-		long n = 0; // Number of operations used ( copy = 1, conditional = 2, swap = 3)
-		
 		// make copy of stored unsorted array
 		int[] unsorted = (int[]) m_unsortedData.clone();
 		
+		long startTime = System.nanoTime();
 		// Sort
 		int i , j, minIndex;
 		
 	    for (i=0; i < unsorted.length - 1; i++) {
 	    	minIndex = i;
-	    	n++;	// copy
 	        for(j = i+1; j < unsorted.length; j++) {
-	        	n += 2;	// conditional
 	            if (unsorted[j] < unsorted[minIndex]) {
 	            	minIndex = j;
-	            	n++;	// copy
 	            }
 	        }
 	        swap(unsorted, i, minIndex);
-	        n += 3;	// swap
 	    }
 	    
 	    // return number of operations
-		return n;
+		return System.nanoTime() - startTime;
 	}
 	
 	private long insertionSort() {
 		
-		long n = 0; // Number of operations used ( copy = 1, conditional = 2, swap = 3)
-		
 		// make copy of stored unsorted array
 		int[] unsorted = (int[]) m_unsortedData.clone();
 		
+		long startTime = System.nanoTime();
 		// Sort
 		int i, j;
 	    for( i=1; i < unsorted.length; i++){
 	      	int temp = unsorted[i];
 	      	j=i;
-	      	
-	      	n += 2;	// conditional
 	        while ( j>0 && unsorted[j-1] >= temp){
 	        	unsorted[j] = unsorted[j-1];
 	            j--;
 	            unsorted[j] = temp;
-	            n += 3;	// swap
 	        }
 	    }
 		
 	    // return number of operations
-	 	return n;
+	 	return System.nanoTime() - startTime;
 	}
 	
 }
